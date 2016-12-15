@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <lasso-head/>
+    </head>
+    <body>
+        <header class="playground">
+            <h1>Marko Components Playground</h1>
+            <div if(data.name)>
+                <h2>${data.name}</h2>
+                <a href="/">back to components list</a>
+                <select>
+                    <option for(fixtureName in data.fixtureNames) selected=fixtureName===data.fixtureName>
+                        ${fixtureName}
+                    </option>
+                </select>
+            </div>
+        </header>
+        <div class="playground-content">
+            <div>
+                <layout-placeholder name="main"/>
+            </div>
+        </div>
+        <lasso-body/>
+        <init-widgets/>
+        <browser-refresh/>
+    </body>
+</html>

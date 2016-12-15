@@ -1,0 +1,15 @@
+<lasso-page  package-path="./browser.json"/>
+<layout-use("./playground-layout.marko")>
+    <layout-put into="main">
+        <nav class="components-list">
+            <for(component in data.components)>
+                <p>
+                    <a href=('/'+component.path)>
+                         &lt;${component.name}&gt;
+                    </a><br/>
+                    <small>${component.path}</small>
+                </p>
+            </for>
+        </nav>
+    </layout-put>
+</layout-use>

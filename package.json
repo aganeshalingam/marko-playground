@@ -1,0 +1,27 @@
+{
+  "name": "marko-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-refresh": "^1.7.0",
+    "browser-refresh-taglib": "^1.1.0",
+    "express": "^4.14.0",
+    "fs-walker": "^1.0.0",
+    "glob": "^7.1.1",
+    "lasso": "^2.8.3",
+    "lasso-less": "^2.3.1",
+    "lasso-marko": "^2.1.0",
+    "marko": "^3.13.1",
+    "marko-widgets": "^6.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

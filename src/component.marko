@@ -1,0 +1,6 @@
+<lasso-page package-path="./browser.json"/>
+<layout-use("./playground-layout.marko", data)>
+    <layout-put into="main">
+        <invoke data.renderer(data.fixture, out)/>
+    </layout-put>
+</layout-use>
